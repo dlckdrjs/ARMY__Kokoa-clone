@@ -23,13 +23,15 @@
   
   #login-form input{
     border: none;
-    padding: 15px 0px;
+    padding: 15px 15px;
     font-size: 18px;
     margin-bottom: 25px;
+    border-radius: 7px;
+
   }
   
   #login-form input:not([type="submit"]){
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.2);
     transition: border-color 0.3s ease-in-out;
   }
   
@@ -44,7 +46,6 @@
   #login-form input[type="submit"]{
     background-color: var(--yellow);
     cursor: pointer;
-    border-radius: 7px;
     padding: 20px 0px;
   }
   
