@@ -7,8 +7,13 @@
 .user-component__avatare {
   width: 70px;
   height: 70px;
-  border-radius: 24px;
+  border-radius: 25px;
   margin-right: 20px;
+}
+
+.user-component__avatare--xl {
+  width: 80px;
+  height: 80px;
 }
 .user-component__title {
   font-size: 22px;
