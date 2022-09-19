@@ -123,11 +123,11 @@ table {
   border-spacing: 0;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
-a{
+a {
   color: inherit;
-  text-decoration: none; 
+  text-decoration: none;
 }
