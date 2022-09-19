@@ -14,10 +14,13 @@
 
 /* Screens */
 @import"screens/login.css ";
+@import"screens/friend.css";
+
 
 
 body {
   font-family: "Open Sans", sans-serif;
   height: 1000vh;
+  color: #2e353e;
 }
 
