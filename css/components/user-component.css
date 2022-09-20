@@ -36,11 +36,11 @@
 
 .user-component__subtitle {
   margin-top: 8px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--text-transparent__color);
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--text-transparent__color);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
