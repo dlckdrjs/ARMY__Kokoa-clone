@@ -98,7 +98,13 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 5px 25px;
+  padding: 5px 0px;
+  padding-left: 10px;
+  padding-right: 40px;
+}
+
+.reply__column {
+  position: relative;
 }
 
 .reply__column:first-child {
@@ -106,7 +112,6 @@
 }
 .reply__column:last-child {
   width: 90%;
-  position: relative;
 }
 
 .reply input {
@@ -121,6 +126,12 @@
   position: absolute;
   right: -20px;
   top: 5px;
+}
+
+.reply__column:first-child i {
+  position: absolute;
+  left: 33px;
+  top: 0px;
 }
 
 .reply__column:last-child > i {
