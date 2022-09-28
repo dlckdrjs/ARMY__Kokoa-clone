@@ -20,11 +20,23 @@
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .chat__timestamp {
@@ -101,6 +113,7 @@
   padding: 5px 0px;
   padding-left: 10px;
   padding-right: 40px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column {
@@ -119,6 +132,7 @@
   padding: 12px;
   border: var(--main-border);
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -155,4 +169,24 @@
 .reply__column:last-child button:focus,
 .reply__column:last-child button:active {
   outline: none;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .reply__column:last-child i,
+.reply:focus-within .reply__column:last-child button {
+  opacity: 0;
+}
+.reply:focus-within input {
+  width: 94vw;
+  transform: translateX(-10%) translateY(-80px);
+}
+
+.reply .reply__column:first-child,
+.reply .reply__column:last-child i,
+.reply .reply__column:last-child button {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
